@@ -1,0 +1,95 @@
+* {
+	font-family: 'Nunito', sans-serif;
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+
+p {
+	padding: 40px 8px 0px 8px;
+}
+
+
+/* Classes */
+
+.header__inner {
+	padding: 32px;
+}
+
+.header__title {
+	text-align: center;
+	font-size: 1.75em
+}
+
+.content {
+	margin: 0px 16px 0px 16px;
+}
+
+.column {
+	float: left;
+	padding: 16px;
+}
+
+.item {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	background-color: #999999;
+}
+
+.title {
+	text-align: center;
+	float: right;
+	padding: 4px 56px 4px 56px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0px 0px 1px 1px;
+	font-size: 1.25em
+}
+
+
+/* Ids */
+
+#chicken {
+	background-color: #D59898;
+}
+
+#beef {
+	background-color: #C14543;
+	color: white;
+}
+
+#sushi {
+	background-color: #E5D198;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+
+  .column {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .column {
+    width: 50%;
+  }
+
+  :last-child:nth-child(odd).column {
+  	width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .column {
+    width: 33.3333%;
+  }
+
+}
